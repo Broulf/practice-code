@@ -148,14 +148,14 @@ def main():
     if TOKEN is None:
         print("Error: Discord bot token not provided.")
         return
-    ####################################### STOP HERE #################################################
 
     # Connect to OBS websocket
     cl = obs.ReqClient(host='localhost', 
                        port=4455, 
                        password='1cMYi1NmAdrIXsrh', 
                        timeout=30)
-
+    ####################################### STOP HERE #################################################
+    
     # Define intents
     intents = discord.Intents.default()
     intents.typing = True
